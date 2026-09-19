@@ -1,22 +1,22 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-import mentora from "@/assets/mentora.jpg";
-import mentoraAvatar from "@/assets/mentora-avatar.jpg";
+import tipster from "@/assets/tipster.jpg";
+import tipsterAvatar from "@/assets/tipster-avatar.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Método — Autoridade que transforma conhecimento em audiência" },
+      { title: "Método — Apostas esportivas com gestão, não com sorte" },
       {
         name: "description",
         content:
-          "Um sistema de 12 semanas para especialistas dominarem seu nicho e venderem um produto digital com previsibilidade — sem depender de sorte ou de viral.",
+          "Um sistema de 12 semanas para apostadores dominarem gestão de banca, leitura de mercado e valor esperado — com constância, sem depender de cravada ou de sorte.",
       },
-      { property: "og:title", content: "Método — Autoridade que transforma conhecimento em audiência" },
+      { property: "og:title", content: "Método — Apostas esportivas com gestão, não com sorte" },
       {
         property: "og:description",
         content:
-          "Um sistema de 12 semanas para especialistas dominarem seu nicho e venderem um produto digital com previsibilidade.",
+          "Um sistema de 12 semanas para apostadores dominarem gestão de banca, leitura de mercado e valor esperado.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -25,32 +25,32 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const clientes = [
-  "Clínica Vital — Dr. Paulo Andrade",
-  "Educação em Movimento — Bia Torres",
-  "Finanças Simples — Marcos Lima",
-  "Design de Marca — Ana Reis",
-  "Nutrição Real — Dra. Camila Souza",
+const alunos = [
+  "Rafael M. — Futebol · Over/Under",
+  "Bruna L. — Tênis · Circuitos ATP",
+  "Diego S. — Basquete · NBA",
+  "Carla P. — Mercados asiáticos",
+  "Thiago R. — Futebol · Mercado de cantos",
 ];
 
 const movimentos = [
   {
     numero: "01",
-    titulo: "Posicionamento",
+    titulo: "Gestão de banca",
     texto:
-      "Você define para quem fala e o que só você pode dizer. Clareza que separa especialista de desconhecido.",
+      "Você aprende a proteger o capital: stakes, limites e plano de perda. Sobreviver primeiro — lucrar sempre.",
   },
   {
     numero: "02",
-    titulo: "Conteúdo que vende",
+    titulo: "Valor esperado",
     texto:
-      "Um sistema de conteúdos que atrai, educa e converte a audiência em espera ativa pelo seu lançamento.",
+      "Leitura de odds e linhas para identificar valor real no mercado. Não é palpite — é probabilidade e matemática.",
   },
   {
     numero: "03",
-    titulo: "Lançamento previsível",
+    titulo: "Rotina de apostador",
     texto:
-      "O funil do seu produto digital, etapa por etapa, para transformar seguidores em clientes recorrentes.",
+      "Um processo semanal de análise, registro e revisão que transforma apostas isoladas em resultado consistente.",
   },
 ];
 
@@ -91,24 +91,24 @@ function Index() {
         <div className="mx-auto max-w-6xl px-6 pt-16 pb-12 md:pt-24">
           <div className="mb-8 flex items-center gap-3">
             <span className="text-[11px] font-semibold tracking-[0.28em] uppercase text-accent">
-              Mentoria digital · 2026
+              Mentoria de apostas · 2026
             </span>
             <span className="h-px w-16 bg-accent/50" />
           </div>
           <h1 className="max-w-4xl font-display text-5xl leading-[1.02] font-medium tracking-tight md:text-7xl">
-            A autoridade que transforma conhecimento em uma audiência que{" "}
-            <span className="italic text-accent">paga.</span>
+            A banca cresce quando a aposta para de ser chute e vira{" "}
+            <span className="italic text-accent">método.</span>
           </h1>
           <p className="mt-8 max-w-xl text-lg leading-relaxed text-ink">
-            Um sistema de 12 semanas para especialistas dominarem seu nicho e venderem um produto
-            digital com previsibilidade — sem depender de sorte ou de viral.
+            Um sistema de 12 semanas para apostadores dominarem gestão de banca, leitura de mercado
+            e valor esperado — sem depender de "cravada" ou de sorte.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
               href="#acesso"
               className="rounded-full bg-brand px-8 py-4 text-sm font-semibold text-cream transition hover:bg-accent"
             >
-              Quero construir autoridade
+              Quero apostar com método
             </a>
             <a
               href="#metodo"
@@ -120,11 +120,11 @@ function Index() {
           <div className="mt-14 grid max-w-2xl grid-cols-3 gap-6 border-t border-brand/10 pt-8">
             <div>
               <div className="font-display text-4xl font-semibold">+3.200</div>
-              <div className="mt-1 text-[13px] text-ink/70">alunos no sistema</div>
+              <div className="mt-1 text-[13px] text-ink/70">apostadores no sistema</div>
             </div>
             <div>
               <div className="font-display text-4xl font-semibold">R$ 18M</div>
-              <div className="mt-1 text-[13px] text-ink/70">gerados pela turma</div>
+              <div className="mt-1 text-[13px] text-ink/70">em banca gerida pela turma</div>
             </div>
             <div>
               <div className="font-display text-4xl font-semibold">9 / 10</div>
@@ -137,7 +137,7 @@ function Index() {
       {/* Marquee */}
       <div className="overflow-hidden border-y border-brand/10 bg-sand/40 py-4">
         <div className="marquee font-display text-lg italic text-ink/50">
-          {[...clientes, ...clientes].map((c, i) => (
+          {[...alunos, ...alunos].map((c, i) => (
             <span key={i} className="flex items-center gap-12">
               <span>{c}</span>
               <span>·</span>
@@ -174,31 +174,31 @@ function Index() {
                 Quem conduz
               </div>
               <h2 className="mt-5 font-display text-4xl leading-tight font-medium tracking-tight md:text-5xl">
-                Helena Vasconcelos
+                Rafael Monteiro
               </h2>
               <p className="mt-6 max-w-md text-[15px] leading-relaxed text-cream/70">
-                Consultora de posicionamento e ex-editora-chefe, já guiou mais de 3.200
-                especialistas a construir uma audiência que confia e compra. O Método é o condensado
-                de 12 anos de campo.
+                Ex-trader esportivo com 8 anos nos mercados asiáticos, já treinou mais de 3.200
+                apostadores a trocar impulso por processo. O Método é o condensado de uma década
+                dentro das linhas.
               </p>
               <div className="mt-8 flex items-center gap-4">
                 <img
-                  src={mentoraAvatar}
-                  alt="Helena Vasconcelos"
+                  src={tipsterAvatar}
+                  alt="Rafael Monteiro"
                   loading="lazy"
                   width={816}
                   height={816}
                   className="size-14 rounded-full object-cover outline-1 -outline-offset-1 outline-cream/20"
                 />
                 <div>
-                  <div className="font-display text-lg font-medium">Helena Vasconcelos</div>
-                  <div className="text-[13px] text-cream/60">Fundadora · Método</div>
+                  <div className="font-display text-lg font-medium">Rafael Monteiro</div>
+                  <div className="text-[13px] text-cream/60">Fundador · Método</div>
                 </div>
               </div>
             </div>
             <img
-              src={mentora}
-              alt="Retrato editorial de Helena Vasconcelos"
+              src={tipster}
+              alt="Retrato editorial de Rafael Monteiro"
               loading="lazy"
               width={1024}
               height={1280}
@@ -213,11 +213,11 @@ function Index() {
         <div className="grid items-center gap-10 md:grid-cols-3">
           <figure className="md:col-span-2">
             <blockquote className="font-display text-3xl leading-snug font-medium tracking-tight italic md:text-4xl">
-              "Em seis semanas sai do invisível. Em doze, a primeira venda veio sem um único anúncio
-              pago."
+              "Em seis semanas saí do prejuízo. Em doze, fechei o primeiro trimestre com ROI
+              positivo sem dobrar stake nenhuma."
             </blockquote>
             <figcaption className="mt-6 text-sm text-ink">
-              Dra. Camila Souza — Nutrição Real · R$ 94 mil no primeiro lançamento
+              Diego S. — Basquete · NBA · +21% de ROI no trimestre
             </figcaption>
           </figure>
           <div id="acesso" className="rounded-2xl border border-brand/10 bg-sand/40 p-8">
@@ -226,7 +226,7 @@ function Index() {
             </div>
             <div className="mt-4 font-display text-5xl font-semibold">R$ 1.490</div>
             <p className="mt-3 text-[15px] text-ink">
-              12 semanas de mentoria, comunidade e templates de lançamento. Pagamento único.
+              12 semanas de mentoria, comunidade e planilhas de gestão de banca. Pagamento único.
             </p>
             <a
               href="#"
@@ -244,7 +244,12 @@ function Index() {
           <div className="font-display text-xl font-semibold">
             Método<span className="text-accent">.</span>
           </div>
-          <p className="text-[13px] text-ink/60">© 2026 Método — Todos os direitos reservados.</p>
+          <div className="text-center md:text-left">
+            <p className="text-[13px] text-ink/60">© 2026 Método — Todos os direitos reservados.</p>
+            <p className="mt-1 text-[11px] text-ink/50">
+              +18 · Aposte com responsabilidade. Apostas envolvem risco de perda financeira.
+            </p>
+          </div>
           <div className="flex gap-6 text-[13px] text-ink">
             <a href="#" className="transition hover:text-accent">
               Termos

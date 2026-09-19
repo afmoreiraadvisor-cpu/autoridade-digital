@@ -18,6 +18,29 @@
  * 2. Register it in @theme inline as --color-<name>: var(--<name>)
  */
 
+@theme {
+  --color-brand: oklch(0.265 0.02 80);
+  --color-ink: oklch(0.36 0.02 80);
+  --color-cream: oklch(0.942 0.014 90);
+  --color-sand: oklch(0.895 0.025 85);
+  --color-accent: oklch(0.565 0.095 60);
+  --font-display: "Fraunces", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+@keyframes mv {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@utility marquee {
+  display: flex;
+  gap: 3rem;
+  white-space: nowrap;
+  animation: mv 22s linear infinite;
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -63,8 +86,8 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  --background: oklch(0.942 0.014 90);
+  --foreground: oklch(0.265 0.02 80);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);

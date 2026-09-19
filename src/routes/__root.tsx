@@ -77,18 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Método — Autoridade que transforma conhecimento em audiência" },
+      { title: "Método — Apostas esportivas com gestão, não com sorte" },
       {
         name: "description",
         content:
-          "Um sistema de 12 semanas para especialistas dominarem seu nicho e venderem um produto digital com previsibilidade.",
+          "Um sistema de 12 semanas para apostadores dominarem gestão de banca, leitura de mercado e valor esperado — com constância, sem depender de cravada ou de sorte.",
       },
       { name: "author", content: "Método" },
-      { property: "og:title", content: "Método — Autoridade que transforma conhecimento em audiência" },
+      { property: "og:title", content: "Método — Apostas esportivas com gestão, não com sorte" },
       {
         property: "og:description",
         content:
-          "Um sistema de 12 semanas para especialistas dominarem seu nicho e venderem um produto digital com previsibilidade.",
+          "Um sistema de 12 semanas para apostadores dominarem gestão de banca, leitura de mercado e valor esperado.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

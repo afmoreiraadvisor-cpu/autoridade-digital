@@ -6,17 +6,17 @@ import tipsterAvatar from "@/assets/tipster-avatar.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Método — Apostas esportivas com gestão, não com sorte" },
+      { title: "Modelo — Página demonstrativa para produto digital" },
       {
         name: "description",
         content:
-          "Um sistema de 12 semanas para apostadores dominarem gestão de banca, leitura de mercado e valor esperado — com constância, sem depender de cravada ou de sorte.",
+          "Página demonstrativa com estrutura editorial para apresentar um produto digital de forma clara e profissional.",
       },
-      { property: "og:title", content: "Método — Apostas esportivas com gestão, não com sorte" },
+      { property: "og:title", content: "Modelo — Página demonstrativa para produto digital" },
       {
         property: "og:description",
         content:
-          "Um sistema de 12 semanas para apostadores dominarem gestão de banca, leitura de mercado e valor esperado.",
+          "Modelo demonstrativo de apresentação para um produto digital.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -26,31 +26,31 @@ export const Route = createFileRoute("/")({
 });
 
 const alunos = [
-  "Rafael M. — Futebol · Over/Under",
-  "Bruna L. — Tênis · Circuitos ATP",
-  "Diego S. — Basquete · NBA",
-  "Carla P. — Mercados asiáticos",
-  "Thiago R. — Futebol · Mercado de cantos",
+  "Conteúdo organizado",
+  "Aulas práticas",
+  "Materiais de apoio",
+  "Acompanhamento",
+  "Comunidade",
 ];
 
 const movimentos = [
   {
     numero: "01",
-    titulo: "Gestão de banca",
+    titulo: "Fundamentos",
     texto:
-      "Você aprende a proteger o capital: stakes, limites e plano de perda. Sobreviver primeiro — lucrar sempre.",
+      "Apresente aqui os conceitos essenciais do seu produto e a transformação proposta ao público.",
   },
   {
     numero: "02",
-    titulo: "Valor esperado",
+    titulo: "Aplicação",
     texto:
-      "Leitura de odds e linhas para identificar valor real no mercado. Não é palpite — é probabilidade e matemática.",
+      "Explique como o conteúdo pode ser colocado em prática por meio de aulas, exercícios e materiais.",
   },
   {
     numero: "03",
-    titulo: "Rotina de apostador",
+    titulo: "Evolução",
     texto:
-      "Um processo semanal de análise, registro e revisão que transforma apostas isoladas em resultado consistente.",
+      "Mostre como a proposta acompanha o aluno na construção de um processo mais claro e consistente.",
   },
 ];
 
@@ -61,17 +61,17 @@ function Index() {
       <header className="border-b border-brand/10">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
           <div className="font-display text-2xl font-semibold tracking-tight">
-            Método<span className="text-accent">.</span>
+            Modelo<span className="text-accent">.</span>
           </div>
           <nav className="hidden items-center gap-10 text-[13px] font-medium tracking-wide text-ink md:flex">
             <a href="#metodo" className="transition hover:text-accent">
-              Método
+              Conteúdo
             </a>
             <a href="#resultados" className="transition hover:text-accent">
-              Resultados
+              Estrutura
             </a>
             <a href="#mentor" className="transition hover:text-accent">
-              Mentor
+              Especialista
             </a>
             <a href="#acesso" className="text-brand underline decoration-accent underline-offset-4">
               Acesso
@@ -81,7 +81,7 @@ function Index() {
             href="#acesso"
             className="rounded-full bg-brand px-6 py-3 text-[13px] font-medium text-cream transition hover:bg-accent"
           >
-            Comprar agora
+            Ver exemplo
           </a>
         </div>
       </header>
@@ -91,44 +91,44 @@ function Index() {
         <div className="mx-auto max-w-6xl px-6 pt-16 pb-12 md:pt-24">
           <div className="mb-8 flex items-center gap-3">
             <span className="text-[11px] font-semibold tracking-[0.28em] uppercase text-accent">
-              Mentoria de apostas · 2026
+              Página demonstrativa · 2026
             </span>
             <span className="h-px w-16 bg-accent/50" />
           </div>
           <h1 className="max-w-4xl font-display text-5xl leading-[1.02] font-medium tracking-tight md:text-7xl">
-            A banca cresce quando a aposta para de ser chute e vira{" "}
-            <span className="italic text-accent">método.</span>
+            Uma apresentação clara transforma conhecimento em{" "}
+            <span className="italic text-accent">valor percebido.</span>
           </h1>
           <p className="mt-8 max-w-xl text-lg leading-relaxed text-ink">
-            Um sistema de 12 semanas para apostadores dominarem gestão de banca, leitura de mercado
-            e valor esperado — sem depender de "cravada" ou de sorte.
+            Este é um modelo neutro para demonstrar a apresentação de um produto digital, sem dados,
+            promessas ou resultados comerciais reais.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
               href="#acesso"
               className="rounded-full bg-brand px-8 py-4 text-sm font-semibold text-cream transition hover:bg-accent"
             >
-              Quero apostar com método
+              Conhecer a estrutura
             </a>
             <a
               href="#metodo"
               className="text-sm font-medium text-ink underline decoration-accent underline-offset-4"
             >
-              Ver como funciona
+              Ver conteúdo
             </a>
           </div>
           <div className="mt-14 grid max-w-2xl grid-cols-3 gap-6 border-t border-brand/10 pt-8">
             <div>
-              <div className="font-display text-4xl font-semibold">+3.200</div>
-              <div className="mt-1 text-[13px] text-ink/70">apostadores no sistema</div>
+              <div className="font-display text-4xl font-semibold">12</div>
+              <div className="mt-1 text-[13px] text-ink/70">módulos ilustrativos</div>
             </div>
             <div>
-              <div className="font-display text-4xl font-semibold">R$ 18M</div>
-              <div className="mt-1 text-[13px] text-ink/70">em banca gerida pela turma</div>
+              <div className="font-display text-4xl font-semibold">3</div>
+              <div className="mt-1 text-[13px] text-ink/70">etapas de conteúdo</div>
             </div>
             <div>
-              <div className="font-display text-4xl font-semibold">9 / 10</div>
-              <div className="mt-1 text-[13px] text-ink/70">nota média dos alunos</div>
+              <div className="font-display text-4xl font-semibold">100%</div>
+              <div className="mt-1 text-[13px] text-ink/70">conteúdo demonstrativo</div>
             </div>
           </div>
         </div>
@@ -150,7 +150,7 @@ function Index() {
       <section id="metodo" className="mx-auto max-w-6xl px-6 py-20 md:py-28">
         <div className="mb-12 flex items-end justify-between">
           <h2 className="max-w-md font-display text-4xl leading-tight font-medium tracking-tight md:text-5xl">
-            O método em três movimentos
+            Uma estrutura em três etapas
           </h2>
           <span className="font-display text-lg italic text-accent">01 — 03</span>
         </div>
@@ -171,34 +171,33 @@ function Index() {
           <div className="grid items-center gap-14 md:grid-cols-2">
             <div>
               <div className="text-[11px] font-semibold tracking-[0.28em] uppercase text-accent">
-                Quem conduz
+                Especialista ilustrativo
               </div>
               <h2 className="mt-5 font-display text-4xl leading-tight font-medium tracking-tight md:text-5xl">
-                Rafael Monteiro
+                Nome do especialista
               </h2>
               <p className="mt-6 max-w-md text-[15px] leading-relaxed text-cream/70">
-                Ex-trader esportivo com 8 anos nos mercados asiáticos, já treinou mais de 3.200
-                apostadores a trocar impulso por processo. O Método é o condensado de uma década
-                dentro das linhas.
+                Use este espaço para apresentar a trajetória, a experiência e a abordagem de quem
+                conduz o produto. O texto e as imagens desta página são apenas exemplos visuais.
               </p>
               <div className="mt-8 flex items-center gap-4">
                 <img
                   src={tipsterAvatar}
-                  alt="Rafael Monteiro"
+                  alt="Retrato ilustrativo do especialista"
                   loading="lazy"
                   width={816}
                   height={816}
                   className="size-14 rounded-full object-cover outline-1 -outline-offset-1 outline-cream/20"
                 />
                 <div>
-                  <div className="font-display text-lg font-medium">Rafael Monteiro</div>
-                  <div className="text-[13px] text-cream/60">Fundador · Método</div>
+                  <div className="font-display text-lg font-medium">Nome do especialista</div>
+                  <div className="text-[13px] text-cream/60">Especialidade · Produto</div>
                 </div>
               </div>
             </div>
             <img
               src={tipster}
-              alt="Retrato editorial de Rafael Monteiro"
+              alt="Retrato editorial ilustrativo"
               loading="lazy"
               width={1024}
               height={1280}
@@ -213,26 +212,26 @@ function Index() {
         <div className="grid items-center gap-10 md:grid-cols-3">
           <figure className="md:col-span-2">
             <blockquote className="font-display text-3xl leading-snug font-medium tracking-tight italic md:text-4xl">
-              "Em seis semanas saí do prejuízo. Em doze, fechei o primeiro trimestre com ROI
-              positivo sem dobrar stake nenhuma."
+              “Este espaço pode apresentar uma percepção sobre a experiência, sempre usando um
+              depoimento real e autorizado na versão final.”
             </blockquote>
             <figcaption className="mt-6 text-sm text-ink">
-              Diego S. — Basquete · NBA · +21% de ROI no trimestre
+              Nome do cliente — depoimento demonstrativo
             </figcaption>
           </figure>
           <div id="acesso" className="rounded-2xl border border-brand/10 bg-sand/40 p-8">
             <div className="text-[11px] font-semibold tracking-[0.28em] uppercase text-accent">
               Acesso
             </div>
-            <div className="mt-4 font-display text-5xl font-semibold">R$ 1.490</div>
+            <div className="mt-4 font-display text-4xl font-semibold">Valor ilustrativo</div>
             <p className="mt-3 text-[15px] text-ink">
-              12 semanas de mentoria, comunidade e planilhas de gestão de banca. Pagamento único.
+              Descreva aqui o formato, a duração e o que estará incluído na oferta real.
             </p>
             <a
-              href="#"
+              href="#acesso"
               className="mt-6 block w-full rounded-full bg-brand py-4 text-center text-sm font-semibold text-cream transition hover:bg-accent"
             >
-              Garantir minha vaga
+              Botão demonstrativo
             </a>
           </div>
         </div>
@@ -242,22 +241,22 @@ function Index() {
       <footer className="border-t border-brand/10">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-10 md:flex-row">
           <div className="font-display text-xl font-semibold">
-            Método<span className="text-accent">.</span>
+            Modelo<span className="text-accent">.</span>
           </div>
           <div className="text-center md:text-left">
-            <p className="text-[13px] text-ink/60">© 2026 Método — Todos os direitos reservados.</p>
+            <p className="text-[13px] text-ink/60">© 2026 Modelo demonstrativo.</p>
             <p className="mt-1 text-[11px] text-ink/50">
               +18 · Aposte com responsabilidade. Apostas envolvem risco de perda financeira.
             </p>
           </div>
           <div className="flex gap-6 text-[13px] text-ink">
-            <a href="#" className="transition hover:text-accent">
+            <a href="#acesso" className="transition hover:text-accent">
               Termos
             </a>
-            <a href="#" className="transition hover:text-accent">
+            <a href="#acesso" className="transition hover:text-accent">
               Privacidade
             </a>
-            <a href="#" className="transition hover:text-accent">
+            <a href="#acesso" className="transition hover:text-accent">
               Contato
             </a>
           </div>

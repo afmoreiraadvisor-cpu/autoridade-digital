@@ -77,18 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Método — Apostas esportivas com gestão, não com sorte" },
+      { title: "Modelo — Página demonstrativa para produto digital" },
       {
         name: "description",
         content:
-          "Um sistema de 12 semanas para apostadores dominarem gestão de banca, leitura de mercado e valor esperado — com constância, sem depender de cravada ou de sorte.",
+          "Página demonstrativa com estrutura editorial para apresentar um produto digital de forma clara e profissional.",
       },
-      { name: "author", content: "Método" },
-      { property: "og:title", content: "Método — Apostas esportivas com gestão, não com sorte" },
+      { name: "author", content: "Modelo" },
+      { property: "og:title", content: "Modelo — Página demonstrativa para produto digital" },
       {
         property: "og:description",
         content:
-          "Um sistema de 12 semanas para apostadores dominarem gestão de banca, leitura de mercado e valor esperado.",
+          "Modelo demonstrativo de apresentação para um produto digital.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -115,7 +115,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <head>
         <HeadContent />
       </head>
